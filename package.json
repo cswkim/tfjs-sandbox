@@ -1,0 +1,40 @@
+{
+  "name": "tfjs-sandbox",
+  "version": "1.0.0",
+  "description": "Tensorflow.js Sandbox",
+  "author": "Christopher Kim",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public",
+    "start:dev": "sirv public --dev --http2 --host 0.0.0.0 --key ssl/key.pem --cert ssl/cert.pem",
+    "lint": "eslint . --ext .js,.svelte"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "prettier": "^2.0.5",
+    "prettier-plugin-svelte": "^1.1.0",
+    "rollup": "^2.17.1",
+    "rollup-plugin-eslint": "https://github.com/cswkim/rollup-plugin-eslint.git#master",
+    "rollup-plugin-livereload": "^1.3.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-svelte": "^5.2.3",
+    "rollup-plugin-terser": "^6.1.0",
+    "stylus": "^0.54.7",
+    "svelte": "^3.23.2",
+    "svelte-preprocess": "^3.9.10"
+  },
+  "dependencies": {
+    "@tensorflow-models/body-pix": "^2.0.5",
+    "@tensorflow/tfjs-node": "^2.0.1",
+    "sirv-cli": "^1.0.1",
+    "webrtc-adapter": "^7.6.2"
+  }
+}
